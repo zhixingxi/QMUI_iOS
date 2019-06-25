@@ -80,9 +80,9 @@ static BOOL QMUI_hasAppliedInitialTemplate;
     }
     
     if (IS_DEBUG && self.sendAnalyticsToQMUITeam) {
-        [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidFinishLaunchingNotification object:nil queue:[NSOperationQueue new] usingBlock:^(NSNotification * _Nonnull note) {
-            [self sendAnalytics];
-        }];
+//        [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidFinishLaunchingNotification object:nil queue:[NSOperationQueue new] usingBlock:^(NSNotification * _Nonnull note) {
+//            [self sendAnalytics];
+//        }];
     }
     
     QMUI_hasAppliedInitialTemplate = YES;
